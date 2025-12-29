@@ -4,7 +4,7 @@ Una extensión de Google Chrome para visualizar estados cuánticos de 1 a 5 Qubi
 
 Esta herramienta es ideal para estudiantes y desarrolladores de computación cuántica, permitiendo visualizar la superposición, la fase y el entrelazamiento (estados mixtos) directamente desde el navegador.
 
-## 🚀 Características
+## Características
 
 * **Visualización 3D:** Esferas de Bloch interactivas (rotar, zoom) renderizadas con Three.js.
 * **Soporte Multi-Qubit:** Soporta vectores de estado de hasta 5 Qubits (vectores de longitud 32).
@@ -13,7 +13,7 @@ Esta herramienta es ideal para estudiantes y desarrolladores de computación cu�
 * **Panel Lateral:** Funciona en el Panel Lateral (Side Panel) de Chrome para permitir la navegación simultánea sin cerrarse.
 * **Convención Little Endian:** Utiliza la convención estándar de Qiskit donde el Qubit 0 es el bit menos significativo (derecha).
 
-## 📂 Estructura del Proyecto
+## Estructura del Proyecto
 
 El proyecto está construido con Javascript vainilla (sin frameworks de compilación) para facilitar el aprendizaje y la modificación.
 
@@ -29,7 +29,7 @@ El proyecto está construido con Javascript vainilla (sin frameworks de compilac
     * `three.module.js`: Motor 3D.
     * `OrbitControls.js`: Controlador para rotar la cámara con el ratón.
 
-## 🧮 Base Matemática
+## Base Matemática
 
 La extensión toma un vector de estado puro $|\psi\rangle$ de $N$ qubits. Para visualizar el qubit $k$, calculamos su **Matriz de Densidad Reducida** ($\rho_k$) realizando la traza parcial sobre el resto del sistema:
 
@@ -45,7 +45,7 @@ $$
 
 Si $|\vec{r}| < 1$, el estado es mixto, lo que indica que el qubit está entrelazado con otros qubits del sistema.
 
-## 🛠️ Instalación y Uso
+## Instalación y Uso
 
 Como esta extensión no está en la Chrome Web Store (aún), debes instalarla en "Modo Desarrollador":
 
@@ -62,7 +62,7 @@ Como esta extensión no está en la Chrome Web Store (aún), debes instalarla en
 2. **Opción A (Manual):** Escribe un vector de estado en el cuadro de texto. Ejemplo: `[0.707, 0.707]` y pulsa "Visualizar".
 3. **Opción B (Automática):** Navega por una web que contenga vectores cuánticos (ej: tutoriales de Qiskit o documentación). La extensión detectará el vector y mostrará un icono de "Ojo" verde 👁️. El estado se visualizará automáticamente. En concreto, en la IBM Quantum Platform, debes activar el panel de "Vector de Estado" (en lugar del panel de amplitudes de probabilidad). 
 
-## 📝 Créditos
+## Créditos
 
-Desarrollado como proyecto educativo para visualización de computación cuántica, por Antonio Morales García
+Desarrollado como proyecto educativo para visualización de computación cuántica, por Antonio Morales García, con asistencia de IA
 Utiliza la librería [Three.js](https://threejs.org/).
